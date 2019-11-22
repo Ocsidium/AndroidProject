@@ -102,6 +102,10 @@ public class ListActivity extends AppCompatActivity {
         if (id == R.id.action_settings) {
             startActivity(new Intent(ListActivity.this, SettingsActivity.class));
         }
+        if (id == R.id.action_openMap) {
+            startActivity(new Intent(ListActivity.this, MapsActivity.class));
+        }
+
 
         return super.onOptionsItemSelected(item);
     }

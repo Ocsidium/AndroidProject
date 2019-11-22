@@ -71,6 +71,9 @@ public class MainActivity extends AppCompatActivity {
         if (id == R.id.action_settings) {
             startActivity(new Intent(MainActivity.this, SettingsActivity.class));
         }
+        if (id == R.id.action_openMap) {
+            startActivity(new Intent(MainActivity.this, MapsActivity.class));
+        }
 
         return super.onOptionsItemSelected(item);
     }

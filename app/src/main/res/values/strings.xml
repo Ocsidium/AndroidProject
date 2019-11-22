@@ -32,4 +32,5 @@
     <string name="switchMode">Switch To Dark Mode</string>
     <string name="switchMode2">Turn Dark Mode Off</string>
     <string name="switchMode1">Turn Dark Mode On</string>
+    <string name="title_activity_maps">Map</string>
 </resources>
