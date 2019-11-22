@@ -17,11 +17,11 @@ public class SettingsActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-//        if(AppCompatDelegate.getDefaultNightMode()==AppCompatDelegate.MODE_NIGHT_YES) {
-//            setTheme(R.style.DarkTheme);
-//        }else {
-//            setTheme(R.style.AppTheme);
-//        }
+        if(AppCompatDelegate.getDefaultNightMode()==AppCompatDelegate.MODE_NIGHT_YES) {
+            setTheme(R.style.DarkTheme);
+        }else {
+            setTheme(R.style.AppTheme);
+        }
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.settings_activity);
@@ -34,24 +34,24 @@ public class SettingsActivity extends AppCompatActivity {
             actionBar.setDisplayHomeAsUpEnabled(true);
         }
 
-//        switchNight=(Switch)findViewById(R.id.switchNight);
-//        if (AppCompatDelegate.getDefaultNightMode()==AppCompatDelegate.MODE_NIGHT_YES) {
-//            switchNight.setChecked(true);
-//        }
-//        switchNight.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
-//            @Override
-//            public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
-//
-//                if (b){
-//                    AppCompatDelegate.getDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES);
-//                    recreate();
-//                }
-//                else {
-//                    AppCompatDelegate.getDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
-//                    recreate();
-//                }
-//            }
-//        });
+        switchNight=(Switch)findViewById(R.id.switchNightSet);
+        if (AppCompatDelegate.getDefaultNightMode()==AppCompatDelegate.MODE_NIGHT_YES) {
+            switchNight.setChecked(true);
+        }
+        switchNight.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
+
+                if (b){
+                    AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES);
+                    recreate();
+                }
+                else {
+                    AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
+                    recreate();
+                }
+            }
+        });
     }
 
     public static class SettingsFragment extends PreferenceFragmentCompat {

@@ -16,14 +16,14 @@
 
 <PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <PreferenceCategory app:title="@string/Preferences">
+<!--    <PreferenceCategory app:title="@string/Preferences">-->
 
-        <SwitchPreferenceCompat
-            app:key="darkMode"
-            app:summaryOff="@string/switchMode1"
-            app:summaryOn="@string/switchMode2"
-            app:title="@string/enableDarkMode" />
+<!--        <SwitchPreferenceCompat-->
+<!--            app:key="darkMode"-->
+<!--            app:summaryOff="@string/switchMode1"-->
+<!--            app:summaryOn="@string/switchMode2"-->
+<!--            app:title="@string/enableDarkMode" />-->
 
-    </PreferenceCategory>
+<!--    </PreferenceCategory>-->
 
 </PreferenceScreen>

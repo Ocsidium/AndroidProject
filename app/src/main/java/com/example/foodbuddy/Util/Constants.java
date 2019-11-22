@@ -6,7 +6,7 @@ public class Constants {
     public static final String DB_NAME = "groceryListDB";
     public static final String TABLE_NAME = "groceryTBL";
 
-    //colums
+    //columns
     public static final String KEY_ID = "id";
     public static final String KEY_GROCERY_ITEM = "grocery_item";
     public static final String KEY_QTY_NUMBER = "quantity_number";
