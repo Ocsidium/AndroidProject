@@ -6,7 +6,7 @@
     <item
         android:id="@+id/action_openMap"
         android:orderInCategory="1"
-        android:title="Open Map"
+        android:title="Shops Nearby"
         app:showAsAction="never" />
 
     <item
