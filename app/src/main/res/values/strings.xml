@@ -33,4 +33,8 @@
     <string name="switchMode2">Turn Dark Mode Off</string>
     <string name="switchMode1">Turn Dark Mode On</string>
     <string name="title_activity_maps">Map</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="loginButton">Login</string>
 </resources>

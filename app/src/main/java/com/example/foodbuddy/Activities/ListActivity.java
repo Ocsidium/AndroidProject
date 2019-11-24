@@ -105,6 +105,9 @@ public class ListActivity extends AppCompatActivity {
         if (id == R.id.action_openMap) {
             startActivity(new Intent(ListActivity.this, MapsActivity.class));
         }
+        if (id == R.id.action_loginSync) {
+            startActivity(new Intent(ListActivity.this, AuthActivity.class));
+        }
 
 
         return super.onOptionsItemSelected(item);
