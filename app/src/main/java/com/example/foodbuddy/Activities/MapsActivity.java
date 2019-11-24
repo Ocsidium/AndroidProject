@@ -184,19 +184,6 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                 mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(latLng, 13));
                 }
         }
-//        if (Build.VERSION.SDK_INT < 23 ) {
-//            locationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER, 0, 0, locationListener);
-//        }else {
-//            if (ContextCompat.checkSelfPermission(this,
-//                    Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
-//                //Ask for permission
-//                ActivityCompat.requestPermissions(this, new String[] {Manifest.permission.ACCESS_FINE_LOCATION}, 1);
-//
-//            }else {
-//                // we have permission!
-//                locationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER, 0, 0, locationListener);
-//            }
-//        }
 
         LatLng horsens = new LatLng(55.86066,9.85034);
         mMap.addMarker(new MarkerOptions().position(horsens).title("You are here!"));

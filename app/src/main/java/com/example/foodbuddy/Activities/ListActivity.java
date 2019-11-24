@@ -15,6 +15,7 @@ import androidx.appcompat.widget.Toolbar;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -149,7 +150,7 @@ public class ListActivity extends AppCompatActivity {
 
         Snackbar.make(v, "Item Saved!", Snackbar.LENGTH_LONG).show();
 
-        // Log.d("Item Added ID:", String.valueOf(db.getGroceriesCount()));
+
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
